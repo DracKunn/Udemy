@@ -20,3 +20,41 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 
 GOOD LUCK 😀
 */
+// 1.
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
+
+//2.
+avgDolphins1 = calcAverage(44, 23, 71);
+avgKoalas1 = calcAverage(65, 54, 49);
+
+avgDolphins2 = calcAverage(85, 54, 41);
+avgKoalas2 = calcAverage(23, 34, 27);
+
+console.log(`TEST1: Dolphins Average: ${avgDolphins1}, Koalas Average: ${avgKoalas1}; TEST2: Dolphins Average: ${avgDolphins2}, Koalas Average: ${avgKoalas2}`)
+// 3.
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins >= avgKoalas * 2) {
+        console.log(`Dolphins win(${avgDolphins} vs.${avgKoalas})`)
+    } else if (avgDolphins * 2 <= avgKoalas) {
+        console.log(`Koalas win(${avgKoalas} vs.${avgDolphins})`)
+    } else if (avgDolphins === avgKoalas) {
+        console.log("It's a draw!");
+    } else {
+        console.log('No team wins!');
+    }
+}
+// 4.
+checkWinner(avgDolphins1, avgKoalas1);
+checkWinner(avgDolphins2, avgKoalas2);
+
+//5.
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins >= avgKoalas * 2) {
+        console.log(`Dolphins win(${avgDolphins} vs.${avgKoalas})`)
+    } else if (avgDolphins * 2 <= avgKoalas) {
+        console.log(`Koalas win(${avgKoalas} vs.${avgDolphins})`)
+    } else {
+        console.log('No team wins!');
+    }
+}
